@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1000px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.selections {
+    display: flex;
+}
+
+.select-btn {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin: .25rem;
+}
+
+.select-btn:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 0 0 .5rem gold;
+    transition: .25s ease-out;
+}
+
+.select-btn:active {
+    transform: scale(1);
+    cursor: pointer;
+    box-shadow: 0 0 .5rem gold;
+}
+
+.select-btn img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.scores {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+}
+
+.scores .scores-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cond {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h1>Welcome to <br/> Rock Paper Scissors Lizard Spock</h1>
+        <div class="selections">
+            <button class="select-btn" onclick="compare('rock')"><img src="img/rock.png" alt=""></button>
+            <button class="select-btn" onclick="compare('paper')"><img src="img/paper.png" alt=""></button>
+            <button class="select-btn" onclick="compare('scissors')"><img src="img/scissors.png" alt=""></button>
+            <button class="select-btn" onclick="compare('lizard')"><img src="img/lizard.png" alt=""></button>
+            <button class="select-btn" onclick="compare('spock')"><img src="img/spock.png" alt=""></button>
+        </div>
+    
+        <div class="scores">
+            <div class="scores-container">
+                <h3>You</h3>
+                <div class="score" id="player-score">0</div>
+                <div class="choice" id="player-action">
+                </div>
+            </div>
+
+            <div class="cond">
+                <h2>Condition</h2>
+                <p id="condition">BEGIN!</p>
+            </div>
+
+            <div class="scores-container">
+                <h3>Computer</h3>
+                <div class="score" id="computer-score">0</div>
+                <div class="choice" id="computer-action">
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>
